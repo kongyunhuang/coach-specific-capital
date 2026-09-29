@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.DS_Store
+data/*
+!data/README.md
+*.log
+*.bak
+assets/*_last.png
+# match-level pipeline outputs, not shipped (see data/README.md)
+results/cost_incidence_profile_real.csv
+results/cost_incidence_did_control_cache.csv
+results/placebo_example_draw.csv
+results/reconcile_coach_defs.csv
+

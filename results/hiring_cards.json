@@ -1,0 +1,1012 @@
+{
+  "note": "预测到任前 10 场分族剖面 = w·教练旧签名 + (1−w)·前任签名；w 来自 prediction_portability.json（对前任、主口径）；单位 = 联赛赛季内 SD（已翻转使高 = 更多压迫/控球）",
+  "weights": {
+    "OUT": 0.5282334214367983,
+    "CONCEDED": 0.5976801174850566,
+    "POSS": 0.40319735771623777,
+    "PROG": 0.49281011836135463
+  },
+  "summary": {
+    "OUT": {
+      "family": "Out of possession: pressing & defensive line",
+      "off_ball": true,
+      "w_coach": 0.5282334214367983,
+      "n_pairs": 7,
+      "mae_first10": {
+        "keep_predecessor": 0.1435388250864639,
+        "import_coach": 0.18659089315846525,
+        "blend": 0.09687255122747851
+      },
+      "mae_full": {
+        "keep_predecessor": 0.17130014640007982,
+        "import_coach": 0.17169813253245145,
+        "blend": 0.14174389860943548
+      },
+      "direction_correct_share": 0.7142857142857143
+    },
+    "CONCEDED": {
+      "family": "Conceded to the opponent",
+      "off_ball": true,
+      "w_coach": 0.5976801174850566,
+      "n_pairs": 7,
+      "mae_first10": {
+        "keep_predecessor": 0.2984887546123998,
+        "import_coach": 0.3176686383739264,
+        "blend": 0.1644088385283771
+      },
+      "mae_full": {
+        "keep_predecessor": 0.3484436705367198,
+        "import_coach": 0.26771372244960645,
+        "blend": 0.12455783440054444
+      },
+      "direction_correct_share": 1.0
+    },
+    "POSS": {
+      "family": "In possession: retention & build-up",
+      "off_ball": false,
+      "w_coach": 0.40319735771623777,
+      "n_pairs": 7,
+      "mae_first10": {
+        "keep_predecessor": 0.16960575888672996,
+        "import_coach": 0.1639630246325721,
+        "blend": 0.13165740956488292
+      },
+      "mae_full": {
+        "keep_predecessor": 0.15623381146450321,
+        "import_coach": 0.1588269231328714,
+        "blend": 0.08564781621022574
+      },
+      "direction_correct_share": 0.8571428571428571
+    },
+    "PROG": {
+      "family": "In possession: progression & chance creation",
+      "off_ball": false,
+      "w_coach": 0.49281011836135463,
+      "n_pairs": 7,
+      "mae_first10": {
+        "keep_predecessor": 0.16097239213443057,
+        "import_coach": 0.13721255184321118,
+        "blend": 0.10686770900314427
+      },
+      "mae_full": {
+        "keep_predecessor": 0.12186682525437618,
+        "import_coach": 0.13694405369843166,
+        "blend": 0.08358898769576555
+      },
+      "direction_correct_share": 1.0
+    },
+    "off_ball": {
+      "keep_predecessor": 0.22101378984943187,
+      "import_coach": 0.25212976576619583,
+      "blend": 0.1306406948779278
+    },
+    "on_ball": {
+      "keep_predecessor": 0.16528907551058025,
+      "import_coach": 0.15058778823789165,
+      "blend": 0.1192625592840136
+    }
+  },
+  "robustness": {
+    "OUT": {
+      "n": 7,
+      "mae_keep": 0.1435388250864639,
+      "mae_import": 0.18659089315846525,
+      "mae_equal_blend": 0.09828445429035029,
+      "mae_loo_blend": 0.12097329412547261,
+      "equal_blend_beats_keep": 4,
+      "equal_blend_beats_import": 6,
+      "direction_correct_coach": 0.7142857142857143,
+      "direction_correct_mean_reversion": 0.5714285714285714
+    },
+    "CONCEDED": {
+      "n": 7,
+      "mae_keep": 0.2984887546123998,
+      "mae_import": 0.3176686383739264,
+      "mae_equal_blend": 0.15707448246108083,
+      "mae_loo_blend": 0.18697648918378965,
+      "equal_blend_beats_keep": 5,
+      "equal_blend_beats_import": 6,
+      "direction_correct_coach": 1.0,
+      "direction_correct_mean_reversion": 0.7142857142857143
+    },
+    "POSS": {
+      "n": 7,
+      "mae_keep": 0.16960575888672996,
+      "mae_import": 0.1639630246325721,
+      "mae_equal_blend": 0.1228281583769532,
+      "mae_loo_blend": 0.149064841450759,
+      "equal_blend_beats_keep": 5,
+      "equal_blend_beats_import": 4,
+      "direction_correct_coach": 0.8571428571428571,
+      "direction_correct_mean_reversion": 0.7142857142857143
+    },
+    "PROG": {
+      "n": 7,
+      "mae_keep": 0.16097239213443057,
+      "mae_import": 0.13721255184321118,
+      "mae_equal_blend": 0.10644083312401939,
+      "mae_loo_blend": 0.13153869550182906,
+      "equal_blend_beats_keep": 6,
+      "equal_blend_beats_import": 3,
+      "direction_correct_coach": 1.0,
+      "direction_correct_mean_reversion": 0.8571428571428571
+    },
+    "off_ball": {
+      "mae_keep": 0.22101378984943187,
+      "mae_import": 0.25212976576619583,
+      "mae_equal_blend": 0.12767946837571556,
+      "mae_loo_blend": 0.15397489165463113,
+      "direction_correct_coach": 0.8571428571428572,
+      "direction_correct_mean_reversion": 0.6428571428571428
+    },
+    "on_ball": {
+      "mae_keep": 0.16528907551058025,
+      "mae_import": 0.15058778823789165,
+      "mae_equal_blend": 0.11463449575048629,
+      "mae_loo_blend": 0.14030176847629403,
+      "direction_correct_coach": 0.9285714285714286,
+      "direction_correct_mean_reversion": 0.7857142857142857
+    }
+  },
+  "cards": [
+    {
+      "coach": "David Moyes",
+      "from_club": "West Ham United",
+      "to_club": "Everton",
+      "n_from": 76,
+      "n_to": 19,
+      "predecessor": "Sean Dyche",
+      "n_pred": 75,
+      "families": {
+        "OUT": {
+          "family": "Out of possession: pressing & defensive line",
+          "off_ball": true,
+          "coach_prior": -0.22816816523314523,
+          "actual_full": -0.16194519240087887,
+          "actual_first10": -0.02666414612843965,
+          "predecessor": 0.20790137776213943,
+          "w_coach": 0.5282334214367983,
+          "predicted_blend": -0.022445128918640797,
+          "err_first10": {
+            "keep_predecessor": 0.23456552389057908,
+            "import_coach": 0.20150401910470558,
+            "blend": 0.004219017209798854
+          },
+          "err_full": {
+            "keep_predecessor": 0.3698465701630183,
+            "import_coach": 0.06622297283226636,
+            "blend": 0.1395000634822381
+          },
+          "direction_vs_predecessor": {
+            "predicted": "less",
+            "actual_first10": "less",
+            "correct": true
+          }
+        },
+        "CONCEDED": {
+          "family": "Conceded to the opponent",
+          "off_ball": true,
+          "coach_prior": -0.6313209357913426,
+          "actual_full": -0.42173882049748035,
+          "actual_first10": -0.37595460953313314,
+          "predecessor": -0.37029753455544573,
+          "w_coach": 0.5976801174850566,
+          "predicted_blend": -0.5263060316724657,
+          "err_first10": {
+            "keep_predecessor": 0.005657074977687415,
+            "import_coach": 0.2553663262582095,
+            "blend": 0.15035142213933256
+          },
+          "err_full": {
+            "keep_predecessor": 0.05144128594203462,
+            "import_coach": 0.20958211529386228,
+            "blend": 0.10456721117498535
+          },
+          "direction_vs_predecessor": {
+            "predicted": "less",
+            "actual_first10": "less",
+            "correct": true
+          }
+        },
+        "POSS": {
+          "family": "In possession: retention & build-up",
+          "off_ball": false,
+          "coach_prior": -0.2130920247038433,
+          "actual_full": -0.3883936091014669,
+          "actual_first10": -0.35253826854986514,
+          "predecessor": -0.2033831162136156,
+          "w_coach": 0.40319735771623777,
+          "predicted_blend": -0.20729772246318418,
+          "err_first10": {
+            "keep_predecessor": 0.14915515233624954,
+            "import_coach": 0.13944624384602183,
+            "blend": 0.14524054608668097
+          },
+          "err_full": {
+            "keep_predecessor": 0.18501049288785132,
+            "import_coach": 0.1753015843976236,
+            "blend": 0.18109588663828274
+          },
+          "direction_vs_predecessor": {
+            "predicted": "less",
+            "actual_first10": "less",
+            "correct": true
+          }
+        },
+        "PROG": {
+          "family": "In possession: progression & chance creation",
+          "off_ball": false,
+          "coach_prior": -0.05691632745920626,
+          "actual_full": 0.10078123046606495,
+          "actual_first10": 0.0775519052954012,
+          "predecessor": -0.07467207978228856,
+          "w_coach": 0.49281011836135463,
+          "predicted_blend": -0.06592186537835547,
+          "err_first10": {
+            "keep_predecessor": 0.15222398507768975,
+            "import_coach": 0.13446823275460745,
+            "blend": 0.14347377067375666
+          },
+          "err_full": {
+            "keep_predecessor": 0.1754533102483535,
+            "import_coach": 0.1576975579252712,
+            "blend": 0.16670309584442042
+          },
+          "direction_vs_predecessor": {
+            "predicted": "more",
+            "actual_first10": "more",
+            "correct": true
+          }
+        }
+      }
+    },
+    {
+      "coach": "Quique Sánchez Flores",
+      "from_club": "Getafe",
+      "to_club": "Sevilla",
+      "n_from": 31,
+      "n_to": 22,
+      "predecessor": null,
+      "n_pred": null,
+      "families": {
+        "OUT": {
+          "family": "Out of possession: pressing & defensive line",
+          "off_ball": true,
+          "coach_prior": -0.16329443625412185,
+          "actual_full": -0.22405756267510077,
+          "actual_first10": -0.07567070285355225
+        },
+        "CONCEDED": {
+          "family": "Conceded to the opponent",
+          "off_ball": true,
+          "coach_prior": -0.3698358085813848,
+          "actual_full": -0.4664235283681644,
+          "actual_first10": -0.5092328522896669
+        },
+        "POSS": {
+          "family": "In possession: retention & build-up",
+          "off_ball": false,
+          "coach_prior": -0.3562675860193556,
+          "actual_full": -0.01828879868306993,
+          "actual_first10": 0.053214088236302165
+        },
+        "PROG": {
+          "family": "In possession: progression & chance creation",
+          "off_ball": false,
+          "coach_prior": -0.24930329179250926,
+          "actual_full": 0.12195736151830736,
+          "actual_first10": 0.03900145597468723
+        }
+      }
+    },
+    {
+      "coach": "Graham Potter",
+      "from_club": "Chelsea",
+      "to_club": "West Ham United",
+      "n_from": 22,
+      "n_to": 18,
+      "predecessor": "Lopetegui",
+      "n_pred": 20,
+      "families": {
+        "OUT": {
+          "family": "Out of possession: pressing & defensive line",
+          "off_ball": true,
+          "coach_prior": 0.14688773183442097,
+          "actual_full": -0.24892539661919513,
+          "actual_first10": -0.13161090722653282,
+          "predecessor": -0.202486825448389,
+          "w_coach": 0.5282334214367983,
+          "predicted_blend": -0.01793550769192362,
+          "err_first10": {
+            "keep_predecessor": 0.07087591822185618,
+            "import_coach": 0.2784986390609538,
+            "blend": 0.1136753995346092
+          },
+          "err_full": {
+            "keep_predecessor": 0.04643857117080613,
+            "import_coach": 0.3958131284536161,
+            "blend": 0.23098988892727151
+          },
+          "direction_vs_predecessor": {
+            "predicted": "more",
+            "actual_first10": "more",
+            "correct": true
+          }
+        },
+        "CONCEDED": {
+          "family": "Conceded to the opponent",
+          "off_ball": true,
+          "coach_prior": 0.34506964004776247,
+          "actual_full": -0.10312120520633637,
+          "actual_first10": -0.23631153723342016,
+          "predecessor": -0.2808230046881577,
+          "w_coach": 0.5976801174850566,
+          "predicted_blend": 0.09326058475063984,
+          "err_first10": {
+            "keep_predecessor": 0.044511467454737524,
+            "import_coach": 0.5813811772811827,
+            "blend": 0.32957212198406
+          },
+          "err_full": {
+            "keep_predecessor": 0.1777017994818213,
+            "import_coach": 0.44819084525409886,
+            "blend": 0.1963817899569762
+          },
+          "direction_vs_predecessor": {
+            "predicted": "more",
+            "actual_first10": "more",
+            "correct": true
+          }
+        },
+        "POSS": {
+          "family": "In possession: retention & build-up",
+          "off_ball": false,
+          "coach_prior": 0.25542828632933096,
+          "actual_full": 0.1680364296127553,
+          "actual_first10": 0.11471091560603972,
+          "predecessor": -0.08916772357623423,
+          "w_coach": 0.40319735771623777,
+          "predicted_blend": 0.049772477097248156,
+          "err_first10": {
+            "keep_predecessor": 0.20387863918227395,
+            "import_coach": 0.14071737072329124,
+            "blend": 0.06493843850879155
+          },
+          "err_full": {
+            "keep_predecessor": 0.25720415318898954,
+            "import_coach": 0.08739185671657565,
+            "blend": 0.11826395251550714
+          },
+          "direction_vs_predecessor": {
+            "predicted": "more",
+            "actual_first10": "more",
+            "correct": true
+          }
+        },
+        "PROG": {
+          "family": "In possession: progression & chance creation",
+          "off_ball": false,
+          "coach_prior": 0.14610089961776057,
+          "actual_full": -0.1389555314707645,
+          "actual_first10": -0.14112992469778254,
+          "predecessor": -0.1856553282366198,
+          "w_coach": 0.49281011836135463,
+          "predicted_blend": -0.02216250232058606,
+          "err_first10": {
+            "keep_predecessor": 0.044525403538837244,
+            "import_coach": 0.28723082431554314,
+            "blend": 0.11896742237719649
+          },
+          "err_full": {
+            "keep_predecessor": 0.046699796765855284,
+            "import_coach": 0.2850564310885251,
+            "blend": 0.11679302915017845
+          },
+          "direction_vs_predecessor": {
+            "predicted": "more",
+            "actual_first10": "more",
+            "correct": true
+          }
+        }
+      }
+    },
+    {
+      "coach": "Andoni Iraola",
+      "from_club": "Rayo Vallecano",
+      "to_club": "AFC Bournemouth",
+      "n_from": 38,
+      "n_to": 76,
+      "predecessor": "Gary O'Neil",
+      "n_pred": 34,
+      "families": {
+        "OUT": {
+          "family": "Out of possession: pressing & defensive line",
+          "off_ball": true,
+          "coach_prior": 0.3412063417055366,
+          "actual_full": 0.39949299219985024,
+          "actual_first10": 0.21944105049494425,
+          "predecessor": -0.10085696209823662,
+          "w_coach": 0.5282334214367983,
+          "predicted_blend": 0.13265564936168533,
+          "err_first10": {
+            "keep_predecessor": 0.32029801259318086,
+            "import_coach": 0.12176529121059235,
+            "blend": 0.08678540113325892
+          },
+          "err_full": {
+            "keep_predecessor": 0.5003499542980868,
+            "import_coach": 0.05828665049431364,
+            "blend": 0.2668373428381649
+          },
+          "direction_vs_predecessor": {
+            "predicted": "more",
+            "actual_first10": "more",
+            "correct": true
+          }
+        },
+        "CONCEDED": {
+          "family": "Conceded to the opponent",
+          "off_ball": true,
+          "coach_prior": 0.30312089655445756,
+          "actual_full": 0.18827711276143752,
+          "actual_first10": -0.10972113365972536,
+          "predecessor": -0.634395520476744,
+          "w_coach": 0.5976801174850566,
+          "predicted_blend": -0.07406059820136615,
+          "err_first10": {
+            "keep_predecessor": 0.5246743868170186,
+            "import_coach": 0.4128420302141829,
+            "blend": 0.035660535458359205
+          },
+          "err_full": {
+            "keep_predecessor": 0.8226726332381815,
+            "import_coach": 0.11484378379302004,
+            "blend": 0.26233771096280367
+          },
+          "direction_vs_predecessor": {
+            "predicted": "more",
+            "actual_first10": "more",
+            "correct": true
+          }
+        },
+        "POSS": {
+          "family": "In possession: retention & build-up",
+          "off_ball": false,
+          "coach_prior": 0.09747219086985671,
+          "actual_full": -0.06356131382614086,
+          "actual_first10": -0.007133844068494266,
+          "predecessor": -0.19394580819431886,
+          "w_coach": 0.40319735771623777,
+          "predicted_blend": -0.07644684098069023,
+          "err_first10": {
+            "keep_predecessor": 0.1868119641258246,
+            "import_coach": 0.10460603493835098,
+            "blend": 0.06931299691219596
+          },
+          "err_full": {
+            "keep_predecessor": 0.130384494368178,
+            "import_coach": 0.1610335046959976,
+            "blend": 0.012885527154549367
+          },
+          "direction_vs_predecessor": {
+            "predicted": "more",
+            "actual_first10": "more",
+            "correct": true
+          }
+        },
+        "PROG": {
+          "family": "In possession: progression & chance creation",
+          "off_ball": false,
+          "coach_prior": -0.13049466753836497,
+          "actual_full": 0.08261725442139786,
+          "actual_first10": -0.13675740042696596,
+          "predecessor": 0.002773101300266689,
+          "w_coach": 0.49281011836135463,
+          "predicted_blend": -0.06290260363485303,
+          "err_first10": {
+            "keep_predecessor": 0.13953050172723266,
+            "import_coach": 0.006262732888600991,
+            "blend": 0.07385479679211293
+          },
+          "err_full": {
+            "keep_predecessor": 0.07984415312113118,
+            "import_coach": 0.21311192195976283,
+            "blend": 0.1455198580562509
+          },
+          "direction_vs_predecessor": {
+            "predicted": "less",
+            "actual_first10": "less",
+            "correct": true
+          }
+        }
+      }
+    },
+    {
+      "coach": "Julen Lopetegui",
+      "from_club": "Wolverhampton Wanderers",
+      "to_club": "West Ham United",
+      "n_from": 23,
+      "n_to": 20,
+      "predecessor": "David Moyes",
+      "n_pred": 76,
+      "families": {
+        "OUT": {
+          "family": "Out of possession: pressing & defensive line",
+          "off_ball": true,
+          "coach_prior": -0.012440469329871051,
+          "actual_full": -0.202486825448389,
+          "actual_first10": -0.2796740778716681,
+          "predecessor": -0.22816816523314523,
+          "w_coach": 0.5282334214367983,
+          "predicted_blend": -0.11421358632748153,
+          "err_first10": {
+            "keep_predecessor": 0.05150591263852286,
+            "import_coach": 0.26723360854179706,
+            "blend": 0.16546049154418657
+          },
+          "err_full": {
+            "keep_predecessor": 0.02568133978475623,
+            "import_coach": 0.19004635611851795,
+            "blend": 0.08827323912090747
+          },
+          "direction_vs_predecessor": {
+            "predicted": "more",
+            "actual_first10": "less",
+            "correct": false
+          }
+        },
+        "CONCEDED": {
+          "family": "Conceded to the opponent",
+          "off_ball": true,
+          "coach_prior": -0.04917859598485078,
+          "actual_full": -0.2808230046881577,
+          "actual_first10": -0.3873961697193928,
+          "predecessor": -0.6313209357913426,
+          "w_coach": 0.5976801174850566,
+          "predicted_blend": -0.2833860337427729,
+          "err_first10": {
+            "keep_predecessor": 0.24392476607194985,
+            "import_coach": 0.338217573734542,
+            "blend": 0.1040101359766199
+          },
+          "err_full": {
+            "keep_predecessor": 0.35049793110318495,
+            "import_coach": 0.2316444087033069,
+            "blend": 0.0025630290546151957
+          },
+          "direction_vs_predecessor": {
+            "predicted": "more",
+            "actual_first10": "more",
+            "correct": true
+          }
+        },
+        "POSS": {
+          "family": "In possession: retention & build-up",
+          "off_ball": false,
+          "coach_prior": 0.08040690365146703,
+          "actual_full": -0.08916772357623423,
+          "actual_first10": -0.20898579306194126,
+          "predecessor": -0.2130920247038433,
+          "w_coach": 0.40319735771623777,
+          "predicted_blend": -0.09475403229843482,
+          "err_first10": {
+            "keep_predecessor": 0.004106231641902047,
+            "import_coach": 0.2893926967134083,
+            "blend": 0.11423176076350644
+          },
+          "err_full": {
+            "keep_predecessor": 0.12392430112760908,
+            "import_coach": 0.16957462722770128,
+            "blend": 0.005586308722200589
+          },
+          "direction_vs_predecessor": {
+            "predicted": "more",
+            "actual_first10": "more",
+            "correct": true
+          }
+        },
+        "PROG": {
+          "family": "In possession: progression & chance creation",
+          "off_ball": false,
+          "coach_prior": -0.1594747672921384,
+          "actual_full": -0.1856553282366198,
+          "actual_first10": -0.09935081212849269,
+          "predecessor": -0.05691632745920626,
+          "w_coach": 0.49281011836135463,
+          "predicted_blend": -0.1074581643322294,
+          "err_first10": {
+            "keep_predecessor": 0.042434484669286426,
+            "import_coach": 0.0601239551636457,
+            "blend": 0.00810735220373672
+          },
+          "err_full": {
+            "keep_predecessor": 0.12873900077741351,
+            "import_coach": 0.0261805609444814,
+            "blend": 0.07819716390439038
+          },
+          "direction_vs_predecessor": {
+            "predicted": "less",
+            "actual_first10": "less",
+            "correct": true
+          }
+        }
+      }
+    },
+    {
+      "coach": "Jagoba Arrasate",
+      "from_club": "Osasuna",
+      "to_club": "Mallorca",
+      "n_from": 76,
+      "n_to": 38,
+      "predecessor": "Javier Aguirre",
+      "n_pred": 76,
+      "families": {
+        "OUT": {
+          "family": "Out of possession: pressing & defensive line",
+          "off_ball": true,
+          "coach_prior": -0.027457805089626006,
+          "actual_full": -0.22190047573263927,
+          "actual_first10": -0.10077541037727188,
+          "predecessor": -0.2843423964311134,
+          "w_coach": 0.5282334214367983,
+          "predicted_blend": -0.14864736983240578,
+          "err_first10": {
+            "keep_predecessor": 0.18356698605384153,
+            "import_coach": 0.07331760528764587,
+            "blend": 0.04787195945513391
+          },
+          "err_full": {
+            "keep_predecessor": 0.06244192069847415,
+            "import_coach": 0.19444267064301327,
+            "blend": 0.07325310590023348
+          },
+          "direction_vs_predecessor": {
+            "predicted": "more",
+            "actual_first10": "more",
+            "correct": true
+          }
+        },
+        "CONCEDED": {
+          "family": "Conceded to the opponent",
+          "off_ball": true,
+          "coach_prior": 0.040906506142644204,
+          "actual_full": -0.11884298484946497,
+          "actual_first10": -0.06969656056454616,
+          "predecessor": -0.36450732750544707,
+          "w_coach": 0.5976801174850566,
+          "predicted_blend": -0.12219953978058869,
+          "err_first10": {
+            "keep_predecessor": 0.2948107669409009,
+            "import_coach": 0.11060306670719036,
+            "blend": 0.05250297921604252
+          },
+          "err_full": {
+            "keep_predecessor": 0.24566434265598208,
+            "import_coach": 0.15974949099210917,
+            "blend": 0.0033565549311237175
+          },
+          "direction_vs_predecessor": {
+            "predicted": "more",
+            "actual_first10": "more",
+            "correct": true
+          }
+        },
+        "POSS": {
+          "family": "In possession: retention & build-up",
+          "off_ball": false,
+          "coach_prior": -0.1399456772717284,
+          "actual_full": -0.1923211162210717,
+          "actual_first10": -0.15344352656270485,
+          "predecessor": -0.32890070667437976,
+          "w_coach": 0.40319735771623777,
+          "predicted_blend": -0.2527145380920367,
+          "err_first10": {
+            "keep_predecessor": 0.1754571801116749,
+            "import_coach": 0.013497849290976444,
+            "blend": 0.09927101152933185
+          },
+          "err_full": {
+            "keep_predecessor": 0.13657959045330806,
+            "import_coach": 0.052375438949343295,
+            "blend": 0.060393421870965
+          },
+          "direction_vs_predecessor": {
+            "predicted": "more",
+            "actual_first10": "more",
+            "correct": true
+          }
+        },
+        "PROG": {
+          "family": "In possession: progression & chance creation",
+          "off_ball": false,
+          "coach_prior": 0.05010309399407814,
+          "actual_full": -0.00398460171575403,
+          "actual_first10": 0.058625662595943505,
+          "predecessor": -0.062128874036170914,
+          "w_coach": 0.49281011836135463,
+          "predicted_blend": -0.006819824587256107,
+          "err_first10": {
+            "keep_predecessor": 0.12075453663211441,
+            "import_coach": 0.008522568601865364,
+            "blend": 0.06544548718319962
+          },
+          "err_full": {
+            "keep_predecessor": 0.058144272320416884,
+            "import_coach": 0.05408769570983217,
+            "blend": 0.002835222871502077
+          },
+          "direction_vs_predecessor": {
+            "predicted": "more",
+            "actual_first10": "more",
+            "correct": true
+          }
+        }
+      }
+    },
+    {
+      "coach": "Diego Martínez Penas",
+      "from_club": "Espanyol",
+      "to_club": "Las Palmas",
+      "n_from": 27,
+      "n_to": 29,
+      "predecessor": null,
+      "n_pred": null,
+      "families": {
+        "OUT": {
+          "family": "Out of possession: pressing & defensive line",
+          "off_ball": true,
+          "coach_prior": -0.09077802587339412,
+          "actual_full": -0.12667153624771035,
+          "actual_first10": -0.2945296305562825
+        },
+        "CONCEDED": {
+          "family": "Conceded to the opponent",
+          "off_ball": true,
+          "coach_prior": -0.3173505815479692,
+          "actual_full": -0.022973553280103504,
+          "actual_first10": -0.06409877317015215
+        },
+        "POSS": {
+          "family": "In possession: retention & build-up",
+          "off_ball": false,
+          "coach_prior": -0.4917970225981485,
+          "actual_full": -0.08066774941005417,
+          "actual_first10": -0.10964246562650491
+        },
+        "PROG": {
+          "family": "In possession: progression & chance creation",
+          "off_ball": false,
+          "coach_prior": -0.1242057252451656,
+          "actual_full": -0.16841980289417507,
+          "actual_first10": -0.2366683216731616
+        }
+      }
+    },
+    {
+      "coach": "García Pimienta",
+      "from_club": "Las Palmas",
+      "to_club": "Sevilla",
+      "n_from": 38,
+      "n_to": 31,
+      "predecessor": "Quique Sánchez Flores",
+      "n_pred": 22,
+      "families": {
+        "OUT": {
+          "family": "Out of possession: pressing & defensive line",
+          "off_ball": true,
+          "coach_prior": 0.08421659678956041,
+          "actual_full": -0.16549496957696094,
+          "actual_first10": -0.268027459348036,
+          "predecessor": -0.22405756267510077,
+          "w_coach": 0.5282334214367983,
+          "predicted_blend": -0.06121684868052964,
+          "err_first10": {
+            "keep_predecessor": 0.043969896672935244,
+            "import_coach": 0.3522440561375964,
+            "blend": 0.2068106106675064
+          },
+          "err_full": {
+            "keep_predecessor": 0.058562593098139826,
+            "import_coach": 0.24971156636652136,
+            "blend": 0.1042781208964313
+          },
+          "direction_vs_predecessor": {
+            "predicted": "more",
+            "actual_first10": "less",
+            "correct": false
+          }
+        },
+        "CONCEDED": {
+          "family": "Conceded to the opponent",
+          "off_ball": true,
+          "coach_prior": 0.4494726615866242,
+          "actual_full": 0.17930980577727382,
+          "actual_first10": 0.3597004302220683,
+          "predecessor": -0.4664235283681644,
+          "w_coach": 0.5976801174850566,
+          "predicted_blend": 0.08098941404812932,
+          "err_first10": {
+            "keep_predecessor": 0.8261239585902327,
+            "import_coach": 0.08977223136455587,
+            "blend": 0.278711016173939
+          },
+          "err_full": {
+            "keep_predecessor": 0.6457333341454382,
+            "import_coach": 0.2701628558093504,
+            "blend": 0.0983203917291445
+          },
+          "direction_vs_predecessor": {
+            "predicted": "more",
+            "actual_first10": "more",
+            "correct": true
+          }
+        },
+        "POSS": {
+          "family": "In possession: retention & build-up",
+          "off_ball": false,
+          "coach_prior": 0.353346375224673,
+          "actual_full": 0.2019162433350586,
+          "actual_first10": 0.30858022814030883,
+          "predecessor": -0.01828879868306993,
+          "w_coach": 0.40319735771623777,
+          "predicted_blend": 0.1315535214709465,
+          "err_first10": {
+            "keep_predecessor": 0.32686902682337876,
+            "import_coach": 0.04476614708436416,
+            "blend": 0.17702670666936232
+          },
+          "err_full": {
+            "keep_predecessor": 0.22020504201812852,
+            "import_coach": 0.1514301318896144,
+            "blend": 0.07036272186411208
+          },
+          "direction_vs_predecessor": {
+            "predicted": "more",
+            "actual_first10": "more",
+            "correct": true
+          }
+        },
+        "PROG": {
+          "family": "In possession: progression & chance creation",
+          "off_ball": false,
+          "coach_prior": -0.3024562216978993,
+          "actual_full": -0.13398544419888267,
+          "actual_first10": -0.09085463785241234,
+          "predecessor": 0.12195736151830736,
+          "w_coach": 0.49281011836135463,
+          "predicted_blend": -0.0871979466606381,
+          "err_first10": {
+            "keep_predecessor": 0.2128119993707197,
+            "import_coach": 0.211601583845487,
+            "blend": 0.003656691191774239
+          },
+          "err_full": {
+            "keep_predecessor": 0.25594280571719,
+            "import_coach": 0.16847077749901665,
+            "blend": 0.04678749753824457
+          },
+          "direction_vs_predecessor": {
+            "predicted": "less",
+            "actual_first10": "less",
+            "correct": true
+          }
+        }
+      }
+    },
+    {
+      "coach": "Gary O'Neil",
+      "from_club": "AFC Bournemouth",
+      "to_club": "Wolverhampton Wanderers",
+      "n_from": 34,
+      "n_to": 54,
+      "predecessor": "Julen Lopetegui",
+      "n_pred": 23,
+      "families": {
+        "OUT": {
+          "family": "Out of possession: pressing & defensive line",
+          "off_ball": true,
+          "coach_prior": -0.10085696209823662,
+          "actual_full": -0.14822054491714834,
+          "actual_first10": -0.11242999486420242,
+          "predecessor": -0.012440469329871051,
+          "w_coach": 0.5282334214367983,
+          "predicted_blend": -0.059145015816346735,
+          "err_first10": {
+            "keep_predecessor": 0.09998952553433137,
+            "import_coach": 0.011573032765965802,
+            "blend": 0.05328497904785569
+          },
+          "err_full": {
+            "keep_predecessor": 0.13578007558727728,
+            "import_coach": 0.04736358281891172,
+            "blend": 0.0890755291008016
+          },
+          "direction_vs_predecessor": {
+            "predicted": "less",
+            "actual_first10": "less",
+            "correct": true
+          }
+        },
+        "CONCEDED": {
+          "family": "Conceded to the opponent",
+          "off_ball": true,
+          "coach_prior": -0.634395520476744,
+          "actual_full": -0.1945729631752466,
+          "actual_first10": -0.1988974574191226,
+          "predecessor": -0.04917859598485078,
+          "w_coach": 0.5976801174850566,
+          "predicted_blend": -0.398951116169409,
+          "err_first10": {
+            "keep_predecessor": 0.14971886143427182,
+            "import_coach": 0.4354980630576214,
+            "blend": 0.20005365875028638
+          },
+          "err_full": {
+            "keep_predecessor": 0.14539436719039583,
+            "import_coach": 0.43982255730149733,
+            "blend": 0.20437815299416237
+          },
+          "direction_vs_predecessor": {
+            "predicted": "less",
+            "actual_first10": "less",
+            "correct": true
+          }
+        },
+        "POSS": {
+          "family": "In possession: retention & build-up",
+          "off_ball": false,
+          "coach_prior": -0.19394580819431886,
+          "actual_full": 0.12073550985892499,
+          "actual_first10": 0.22136902163727312,
+          "predecessor": 0.08040690365146703,
+          "w_coach": 0.40319735771623777,
+          "predicted_blend": -0.030211384847038204,
+          "err_first10": {
+            "keep_predecessor": 0.1409621179858061,
+            "import_coach": 0.41531482983159196,
+            "blend": 0.25158040648431135
+          },
+          "err_full": {
+            "keep_predecessor": 0.04032860620745796,
+            "import_coach": 0.31468131805324384,
+            "blend": 0.1509468947059632
+          },
+          "direction_vs_predecessor": {
+            "predicted": "less",
+            "actual_first10": "more",
+            "correct": false
+          }
+        },
+        "PROG": {
+          "family": "In possession: progression & chance creation",
+          "off_ball": false,
+          "coach_prior": 0.002773101300266689,
+          "actual_full": -0.05123032946186558,
+          "actual_first10": 0.2550510666329954,
+          "predecessor": -0.1594747672921384,
+          "w_coach": 0.49281011836135463,
+          "predicted_blend": -0.07951737596723772,
+          "err_first10": {
+            "keep_predecessor": 0.4145258339251338,
+            "import_coach": 0.2522779653327287,
+            "blend": 0.33456844260023316
+          },
+          "err_full": {
+            "keep_predecessor": 0.10824443783027281,
+            "import_coach": 0.054003430762132265,
+            "blend": 0.028287046505372143
+          },
+          "direction_vs_predecessor": {
+            "predicted": "more",
+            "actual_first10": "more",
+            "correct": true
+          }
+        }
+      }
+    }
+  ],
+  "named_narratives": {
+    "Graham Potter": "Graham Potter: Chelsea (22 matches) to West Ham United (18 matches); predecessor at West Ham United: Lopetegui\n  Out of possession: pressing & defensive line: predecessor -0.20, coach prior +0.15 -> predicted -0.02 (w = 0.53); actual first 10 -0.13 -> direction correct; error blend 0.11 vs keep-predecessor 0.07\n  Conceded to the opponent: predecessor -0.28, coach prior +0.35 -> predicted +0.09 (w = 0.60); actual first 10 -0.24 -> direction correct; error blend 0.33 vs keep-predecessor 0.04\n  In possession: retention & build-up: predecessor -0.09, coach prior +0.26 -> predicted +0.05 (w = 0.40); actual first 10 +0.11 -> direction correct; error blend 0.06 vs keep-predecessor 0.20\n  In possession: progression & chance creation: predecessor -0.19, coach prior +0.15 -> predicted -0.02 (w = 0.49); actual first 10 -0.14 -> direction correct; error blend 0.12 vs keep-predecessor 0.04",
+    "Andoni Iraola": "Andoni Iraola: Rayo Vallecano (38 matches) to AFC Bournemouth (76 matches); predecessor at AFC Bournemouth: Gary O'Neil\n  Out of possession: pressing & defensive line: predecessor -0.10, coach prior +0.34 -> predicted +0.13 (w = 0.53); actual first 10 +0.22 -> direction correct; error blend 0.09 vs keep-predecessor 0.32\n  Conceded to the opponent: predecessor -0.63, coach prior +0.30 -> predicted -0.07 (w = 0.60); actual first 10 -0.11 -> direction correct; error blend 0.04 vs keep-predecessor 0.52\n  In possession: retention & build-up: predecessor -0.19, coach prior +0.10 -> predicted -0.08 (w = 0.40); actual first 10 -0.01 -> direction correct; error blend 0.07 vs keep-predecessor 0.19\n  In possession: progression & chance creation: predecessor +0.00, coach prior -0.13 -> predicted -0.06 (w = 0.49); actual first 10 -0.14 -> direction correct; error blend 0.07 vs keep-predecessor 0.14"
+  }
+}

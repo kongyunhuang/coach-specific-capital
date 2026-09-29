@@ -1,0 +1,643 @@
+{
+  "sample_flow": {
+    "team_matches": 4560,
+    "spells": 144,
+    "spells_ge10": 102,
+    "spells_ge15": 85,
+    "spells_ge25": 63,
+    "movers_ge15": {
+      "n_pairs": 9,
+      "n_coaches": 9,
+      "pairs": [
+        {
+          "coach": "David Moyes",
+          "clubA": "West Ham United",
+          "nA": 76,
+          "clubB": "Everton",
+          "nB": 19
+        },
+        {
+          "coach": "Quique Sánchez Flores",
+          "clubA": "Getafe",
+          "nA": 31,
+          "clubB": "Sevilla",
+          "nB": 22
+        },
+        {
+          "coach": "Graham Potter",
+          "clubA": "Chelsea",
+          "nA": 22,
+          "clubB": "West Ham United",
+          "nB": 18
+        },
+        {
+          "coach": "Andoni Iraola",
+          "clubA": "Rayo Vallecano",
+          "nA": 38,
+          "clubB": "AFC Bournemouth",
+          "nB": 76
+        },
+        {
+          "coach": "Julen Lopetegui",
+          "clubA": "Wolverhampton Wanderers",
+          "nA": 23,
+          "clubB": "West Ham United",
+          "nB": 20
+        },
+        {
+          "coach": "Jagoba Arrasate",
+          "clubA": "Osasuna",
+          "nA": 76,
+          "clubB": "Mallorca",
+          "nB": 38
+        },
+        {
+          "coach": "Diego Martínez Penas",
+          "clubA": "Espanyol",
+          "nA": 27,
+          "clubB": "Las Palmas",
+          "nB": 29
+        },
+        {
+          "coach": "García Pimienta",
+          "clubA": "Las Palmas",
+          "nA": 38,
+          "clubB": "Sevilla",
+          "nB": 31
+        },
+        {
+          "coach": "Gary O'Neil",
+          "clubA": "AFC Bournemouth",
+          "nA": 34,
+          "clubB": "Wolverhampton Wanderers",
+          "nB": 54
+        }
+      ],
+      "club_repeats": {
+        "West Ham United": 3,
+        "Wolverhampton Wanderers": 2,
+        "Las Palmas": 2,
+        "AFC Bournemouth": 2,
+        "Sevilla": 2
+      }
+    },
+    "movers_ge5": {
+      "n_pairs": 18,
+      "n_coaches": 16
+    },
+    "act2": {
+      "panel_pipeline_transitions": 77,
+      "skipped_caretaker_le3": 21,
+      "skipped_same_coach_return": 2,
+      "events_table": 54,
+      "new_ge15": 31,
+      "new_ge15_and_pred_ge10": 21,
+      "excluded_new_lt15": 23
+    },
+    "act3": {
+      "raw_transitions": 77,
+      "usable_ge4_each_side": 38,
+      "left_censored": 17,
+      "non_censored": 21,
+      "clubs_non_censored": 16,
+      "n_pre_full10": 13,
+      "n_post_full10": 15,
+      "n_pre_distribution": {
+        "4": 2,
+        "7": 2,
+        "8": 3,
+        "9": 1,
+        "10": 13
+      },
+      "censored_with_full_pre_window": 12,
+      "top_club_share": {
+        "Sevilla": 4,
+        "Southampton": 2,
+        "Wolverhampton Wanderers": 2
+      }
+    },
+    "act2_act3_overlap_team_seasons": 7
+  },
+  "pca": {
+    "dims33": {
+      "n_spells": 102,
+      "n_dims": 33,
+      "pc1_share": 0.412682089525686,
+      "n_pcs_for_90pct": 10,
+      "cum_first12": 0.9358485673187694,
+      "cum_first10": 0.9077866618904149
+    }
+  },
+  "reliability_by_spell_length": [
+    {
+      "metric": "team_match_gk_pass_distance",
+      "r_SB_10-22": 0.8783,
+      "n_10-22": 35,
+      "r_SB_23-40": 0.9617,
+      "n_23-40": 33,
+      "r_SB_>40": 0.9864,
+      "n_>40": 34,
+      "r_SB_all": 0.95,
+      "n_all": 102,
+      "r_SB_homeaway_balanced": 0.9612
+    },
+    {
+      "metric": "pass_completion",
+      "r_SB_10-22": 0.806,
+      "n_10-22": 35,
+      "r_SB_23-40": 0.9401,
+      "n_23-40": 33,
+      "r_SB_>40": 0.984,
+      "n_>40": 34,
+      "r_SB_all": 0.9359,
+      "n_all": 102,
+      "r_SB_homeaway_balanced": 0.9486
+    },
+    {
+      "metric": "team_match_op_passes",
+      "r_SB_10-22": 0.7436,
+      "n_10-22": 35,
+      "r_SB_23-40": 0.9264,
+      "n_23-40": 33,
+      "r_SB_>40": 0.9815,
+      "n_>40": 34,
+      "r_SB_all": 0.9282,
+      "n_all": 102,
+      "r_SB_homeaway_balanced": 0.9411
+    },
+    {
+      "metric": "team_match_passes",
+      "r_SB_10-22": 0.7385,
+      "n_10-22": 35,
+      "r_SB_23-40": 0.9253,
+      "n_23-40": 33,
+      "r_SB_>40": 0.9808,
+      "n_>40": 34,
+      "r_SB_all": 0.9262,
+      "n_all": 102,
+      "r_SB_homeaway_balanced": 0.9374
+    },
+    {
+      "metric": "team_match_possession",
+      "r_SB_10-22": 0.6284,
+      "n_10-22": 35,
+      "r_SB_23-40": 0.9125,
+      "n_23-40": 33,
+      "r_SB_>40": 0.9681,
+      "n_>40": 34,
+      "r_SB_all": 0.8896,
+      "n_all": 102,
+      "r_SB_homeaway_balanced": 0.9081
+    },
+    {
+      "metric": "team_match_passes_inside_box",
+      "r_SB_10-22": 0.5087,
+      "n_10-22": 35,
+      "r_SB_23-40": 0.8927,
+      "n_23-40": 33,
+      "r_SB_>40": 0.9445,
+      "n_>40": 34,
+      "r_SB_all": 0.883,
+      "n_all": 102,
+      "r_SB_homeaway_balanced": 0.8538
+    },
+    {
+      "metric": "team_match_deep_progressions",
+      "r_SB_10-22": 0.5159,
+      "n_10-22": 35,
+      "r_SB_23-40": 0.9209,
+      "n_23-40": 33,
+      "r_SB_>40": 0.9504,
+      "n_>40": 34,
+      "r_SB_all": 0.8793,
+      "n_all": 102,
+      "r_SB_homeaway_balanced": 0.9242
+    },
+    {
+      "metric": "team_match_deep_completions",
+      "r_SB_10-22": 0.5833,
+      "n_10-22": 35,
+      "r_SB_23-40": 0.872,
+      "n_23-40": 33,
+      "r_SB_>40": 0.9379,
+      "n_>40": 34,
+      "r_SB_all": 0.8737,
+      "n_all": 102,
+      "r_SB_homeaway_balanced": 0.8929
+    },
+    {
+      "metric": "team_match_fhalf_pressures_ratio",
+      "r_SB_10-22": 0.531,
+      "n_10-22": 35,
+      "r_SB_23-40": 0.8265,
+      "n_23-40": 33,
+      "r_SB_>40": 0.972,
+      "n_>40": 34,
+      "r_SB_all": 0.8668,
+      "n_all": 102,
+      "r_SB_homeaway_balanced": 0.8788
+    },
+    {
+      "metric": "team_match_aggression",
+      "r_SB_10-22": 0.7419,
+      "n_10-22": 35,
+      "r_SB_23-40": 0.8378,
+      "n_23-40": 33,
+      "r_SB_>40": 0.9551,
+      "n_>40": 34,
+      "r_SB_all": 0.8303,
+      "n_all": 102,
+      "r_SB_homeaway_balanced": 0.8817
+    },
+    {
+      "metric": "team_match_aggressive_actions",
+      "r_SB_10-22": 0.8251,
+      "n_10-22": 35,
+      "r_SB_23-40": 0.7313,
+      "n_23-40": 33,
+      "r_SB_>40": 0.9085,
+      "n_>40": 34,
+      "r_SB_all": 0.8264,
+      "n_all": 102,
+      "r_SB_homeaway_balanced": 0.8384
+    },
+    {
+      "metric": "team_match_pressures",
+      "r_SB_10-22": 0.8095,
+      "n_10-22": 35,
+      "r_SB_23-40": 0.7033,
+      "n_23-40": 33,
+      "r_SB_>40": 0.9144,
+      "n_>40": 34,
+      "r_SB_all": 0.8193,
+      "n_all": 102,
+      "r_SB_homeaway_balanced": 0.8553
+    },
+    {
+      "metric": "team_match_op_passes_conceded",
+      "r_SB_10-22": 0.4724,
+      "n_10-22": 35,
+      "r_SB_23-40": 0.869,
+      "n_23-40": 33,
+      "r_SB_>40": 0.9496,
+      "n_>40": 34,
+      "r_SB_all": 0.8131,
+      "n_all": 102,
+      "r_SB_homeaway_balanced": 0.844
+    },
+    {
+      "metric": "team_match_total_dribbles",
+      "r_SB_10-22": 0.6756,
+      "n_10-22": 35,
+      "r_SB_23-40": 0.8715,
+      "n_23-40": 33,
+      "r_SB_>40": 0.8891,
+      "n_>40": 34,
+      "r_SB_all": 0.8124,
+      "n_all": 102,
+      "r_SB_homeaway_balanced": 0.7904
+    },
+    {
+      "metric": "team_match_possessions",
+      "r_SB_10-22": 0.5677,
+      "n_10-22": 35,
+      "r_SB_23-40": 0.7524,
+      "n_23-40": 33,
+      "r_SB_>40": 0.9526,
+      "n_>40": 34,
+      "r_SB_all": 0.7922,
+      "n_all": 102,
+      "r_SB_homeaway_balanced": 0.7608
+    },
+    {
+      "metric": "team_match_defensive_distance",
+      "r_SB_10-22": 0.4333,
+      "n_10-22": 35,
+      "r_SB_23-40": 0.8041,
+      "n_23-40": 33,
+      "r_SB_>40": 0.9108,
+      "n_>40": 34,
+      "r_SB_all": 0.7915,
+      "n_all": 102,
+      "r_SB_homeaway_balanced": 0.7838
+    },
+    {
+      "metric": "team_match_gk_long_pass_ratio",
+      "r_SB_10-22": 0.5423,
+      "n_10-22": 35,
+      "r_SB_23-40": 0.8333,
+      "n_23-40": 33,
+      "r_SB_>40": 0.9144,
+      "n_>40": 34,
+      "r_SB_all": 0.7822,
+      "n_all": 102,
+      "r_SB_homeaway_balanced": 0.8143
+    },
+    {
+      "metric": "team_match_np_shot_distance",
+      "r_SB_10-22": 0.6681,
+      "n_10-22": 35,
+      "r_SB_23-40": 0.7998,
+      "n_23-40": 33,
+      "r_SB_>40": 0.845,
+      "n_>40": 34,
+      "r_SB_all": 0.7617,
+      "n_all": 102,
+      "r_SB_homeaway_balanced": 0.7743
+    },
+    {
+      "metric": "team_match_box_cross_ratio",
+      "r_SB_10-22": 0.5967,
+      "n_10-22": 35,
+      "r_SB_23-40": 0.7328,
+      "n_23-40": 33,
+      "r_SB_>40": 0.9025,
+      "n_>40": 34,
+      "r_SB_all": 0.7557,
+      "n_all": 102,
+      "r_SB_homeaway_balanced": 0.7365
+    },
+    {
+      "metric": "team_match_deep_progressions_conceded",
+      "r_SB_10-22": 0.2393,
+      "n_10-22": 35,
+      "r_SB_23-40": 0.8061,
+      "n_23-40": 33,
+      "r_SB_>40": 0.9448,
+      "n_>40": 34,
+      "r_SB_all": 0.7492,
+      "n_all": 102,
+      "r_SB_homeaway_balanced": 0.79
+    },
+    {
+      "metric": "team_match_opp_passing_ratio",
+      "r_SB_10-22": 0.5652,
+      "n_10-22": 35,
+      "r_SB_23-40": 0.737,
+      "n_23-40": 33,
+      "r_SB_>40": 0.9119,
+      "n_>40": 34,
+      "r_SB_all": 0.7404,
+      "n_all": 102,
+      "r_SB_homeaway_balanced": 0.743
+    },
+    {
+      "metric": "team_match_counterpressures",
+      "r_SB_10-22": 0.6188,
+      "n_10-22": 35,
+      "r_SB_23-40": 0.7751,
+      "n_23-40": 33,
+      "r_SB_>40": 0.9339,
+      "n_>40": 34,
+      "r_SB_all": 0.7388,
+      "n_all": 102,
+      "r_SB_homeaway_balanced": 0.8187
+    },
+    {
+      "metric": "team_match_ppda",
+      "r_SB_10-22": 0.2046,
+      "n_10-22": 35,
+      "r_SB_23-40": 0.7416,
+      "n_23-40": 33,
+      "r_SB_>40": 0.9424,
+      "n_>40": 34,
+      "r_SB_all": 0.6538,
+      "n_all": 102,
+      "r_SB_homeaway_balanced": 0.7487
+    },
+    {
+      "metric": "team_match_crosses_into_box",
+      "r_SB_10-22": 0.5854,
+      "n_10-22": 35,
+      "r_SB_23-40": 0.6502,
+      "n_23-40": 33,
+      "r_SB_>40": 0.7397,
+      "n_>40": 34,
+      "r_SB_all": 0.6497,
+      "n_all": 102,
+      "r_SB_homeaway_balanced": 0.6589
+    },
+    {
+      "metric": "team_match_defensive_action_regains",
+      "r_SB_10-22": 0.5275,
+      "n_10-22": 35,
+      "r_SB_23-40": 0.4174,
+      "n_23-40": 33,
+      "r_SB_>40": 0.9006,
+      "n_>40": 34,
+      "r_SB_all": 0.6354,
+      "n_all": 102,
+      "r_SB_homeaway_balanced": 0.6701
+    },
+    {
+      "metric": "team_match_high_press_shots",
+      "r_SB_10-22": 0.1442,
+      "n_10-22": 35,
+      "r_SB_23-40": 0.7969,
+      "n_23-40": 33,
+      "r_SB_>40": 0.7846,
+      "n_>40": 34,
+      "r_SB_all": 0.6306,
+      "n_all": 102,
+      "r_SB_homeaway_balanced": 0.7022
+    },
+    {
+      "metric": "team_match_pace_towards_goal",
+      "r_SB_10-22": 0.5204,
+      "n_10-22": 35,
+      "r_SB_23-40": 0.3652,
+      "n_23-40": 33,
+      "r_SB_>40": 0.8521,
+      "n_>40": 34,
+      "r_SB_all": 0.6203,
+      "n_all": 102,
+      "r_SB_homeaway_balanced": 0.7068
+    },
+    {
+      "metric": "team_match_np_xg_per_shot",
+      "r_SB_10-22": 0.319,
+      "n_10-22": 35,
+      "r_SB_23-40": 0.7614,
+      "n_23-40": 33,
+      "r_SB_>40": 0.698,
+      "n_>40": 34,
+      "r_SB_all": 0.6017,
+      "n_all": 102,
+      "r_SB_homeaway_balanced": 0.6622
+    },
+    {
+      "metric": "team_match_fhalf_counterpressures_ratio",
+      "r_SB_10-22": 0.2338,
+      "n_10-22": 35,
+      "r_SB_23-40": 0.6948,
+      "n_23-40": 33,
+      "r_SB_>40": 0.8715,
+      "n_>40": 34,
+      "r_SB_all": 0.5923,
+      "n_all": 102,
+      "r_SB_homeaway_balanced": 0.6973
+    },
+    {
+      "metric": "team_match_pressure_regains",
+      "r_SB_10-22": 0.5823,
+      "n_10-22": 35,
+      "r_SB_23-40": 0.4495,
+      "n_23-40": 33,
+      "r_SB_>40": 0.8351,
+      "n_>40": 34,
+      "r_SB_all": 0.592,
+      "n_all": 102,
+      "r_SB_homeaway_balanced": 0.6907
+    },
+    {
+      "metric": "team_match_counter_attacking_shots",
+      "r_SB_10-22": 0.4416,
+      "n_10-22": 35,
+      "r_SB_23-40": 0.6797,
+      "n_23-40": 33,
+      "r_SB_>40": 0.6188,
+      "n_>40": 34,
+      "r_SB_all": 0.536,
+      "n_all": 102,
+      "r_SB_homeaway_balanced": 0.4058
+    },
+    {
+      "metric": "team_match_directness",
+      "r_SB_10-22": 0.4764,
+      "n_10-22": 35,
+      "r_SB_23-40": 0.4752,
+      "n_23-40": 33,
+      "r_SB_>40": 0.4547,
+      "n_>40": 34,
+      "r_SB_all": 0.4695,
+      "n_all": 102,
+      "r_SB_homeaway_balanced": 0.4249
+    },
+    {
+      "metric": "team_match_counterpressure_regains",
+      "r_SB_10-22": 0.3444,
+      "n_10-22": 35,
+      "r_SB_23-40": 0.4541,
+      "n_23-40": 33,
+      "r_SB_>40": 0.6967,
+      "n_>40": 34,
+      "r_SB_all": 0.453,
+      "n_all": 102,
+      "r_SB_homeaway_balanced": 0.5645
+    },
+    {
+      "metric": "team_match_np_shot_distance_conceded",
+      "r_SB_10-22": -0.1721,
+      "n_10-22": 35,
+      "r_SB_23-40": 0.3105,
+      "n_23-40": 33,
+      "r_SB_>40": 0.7471,
+      "n_>40": 34,
+      "r_SB_all": 0.2217,
+      "n_all": 102,
+      "r_SB_homeaway_balanced": 0.5385
+    }
+  ],
+  "reliability_summary": {
+    "n_spells_by_bin": {
+      "10-22": 35,
+      "23-40": 33,
+      ">40": 34
+    },
+    "mean_spell_length_ge10": 42.990196078431374,
+    "median_r_SB_33": {
+      "all": 0.7821898553199005,
+      "10-22": 0.5652476143806874,
+      "23-40": 0.7968685839774742,
+      ">40": 0.9143645732265224
+    },
+    "n_dims_r_SB_gt_0_4_short": 27,
+    "n_dims_r_SB_gt_0_4_all": 33,
+    "key_dims_short": {
+      "team_match_ppda": 0.20459625096747627,
+      "team_match_deep_progressions_conceded": 0.23927281681565413,
+      "team_match_aggressive_actions": 0.8250872381110168,
+      "team_match_counterpressures": 0.6187646081650852,
+      "team_match_possession": 0.6284368313172791,
+      "pass_completion": 0.8059955266026029,
+      "team_match_passes": 0.7384539459747906
+    },
+    "homeaway_balanced_mean_delta": 0.025141860091026903,
+    "homeaway_balanced_n_gt_0_4": 33,
+    "np_shot_distance_conceded": {
+      "r_SB_all": 0.22166901919315407,
+      "r_SB_homeaway_balanced": 0.538466326117984
+    },
+    "home_away_alternation_rate": 0.8442305690236946,
+    "mean_abs_home_share_gap_between_halves": 0.3017169359282204,
+    "share_spells_gap_gt_0_3": 0.4411764705882353
+  },
+  "league_season_means": {
+    "team_match_passes": {
+      "LaLiga 2022-23": 469.23,
+      "LaLiga 2023-24": 483.05,
+      "LaLiga 2024-25": 481.56,
+      "EPL 2022-23": 484.35,
+      "EPL 2023-24": 500.83,
+      "EPL 2024-25": 483.56
+    },
+    "team_match_possession": {
+      "LaLiga 2022-23": 0.5,
+      "LaLiga 2023-24": 0.5,
+      "LaLiga 2024-25": 0.5,
+      "EPL 2022-23": 0.5,
+      "EPL 2023-24": 0.5,
+      "EPL 2024-25": 0.5
+    },
+    "team_match_ppda": {
+      "LaLiga 2022-23": 10.55,
+      "LaLiga 2023-24": 10.9,
+      "LaLiga 2024-25": 11.18,
+      "EPL 2022-23": 11.11,
+      "EPL 2023-24": 11.81,
+      "EPL 2024-25": 11.23
+    },
+    "team_match_pressures": {
+      "LaLiga 2022-23": 147.64,
+      "LaLiga 2023-24": 162.19,
+      "LaLiga 2024-25": 170.68,
+      "EPL 2022-23": 155.68,
+      "EPL 2023-24": 171.7,
+      "EPL 2024-25": 183.22
+    },
+    "team_match_possessions": {
+      "LaLiga 2022-23": 180.0,
+      "LaLiga 2023-24": 175.6,
+      "LaLiga 2024-25": 171.46,
+      "EPL 2022-23": 173.7,
+      "EPL 2023-24": 167.97,
+      "EPL 2024-25": 161.28
+    },
+    "team_match_deep_progressions": {
+      "LaLiga 2022-23": 42.63,
+      "LaLiga 2023-24": 42.23,
+      "LaLiga 2024-25": 42.11,
+      "EPL 2022-23": 41.46,
+      "EPL 2023-24": 43.22,
+      "EPL 2024-25": 42.59
+    }
+  },
+  "season_2024_25_vs_prev2_pct_change": {
+    "EPL": {
+      "team_match_passes": -0.018338833692381505,
+      "team_match_possession": 0.0,
+      "team_match_ppda": -0.020334736177828425,
+      "team_match_pressures": 0.119295848237611,
+      "team_match_possessions": -0.05594516011014186,
+      "team_match_deep_progressions": 0.006044596379457675
+    },
+    "LaLiga": {
+      "team_match_passes": 0.011374376150287623,
+      "team_match_possession": 0.0,
+      "team_match_ppda": 0.042529962126240106,
+      "team_match_pressures": 0.10179345725728026,
+      "team_match_possessions": -0.03564768219762017,
+      "team_match_deep_progressions": -0.007488952631986846
+    }
+  }
+}

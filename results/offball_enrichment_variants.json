@@ -1,0 +1,66 @@
+{
+  "taxonomy": "code/style_taxonomy.py（看结果前按比赛相位定义）",
+  "source": "portability_rewire_v2_33dim.csv",
+  "variants": {
+    "main_z33_ge15": {
+      "n_dims": 33,
+      "n_sig": 11,
+      "n_sig_offball": 8,
+      "share_sig_offball": 0.7272727272727273,
+      "fisher_or": 5.714285714285714,
+      "fisher_p_onesided": 0.03137463526301366,
+      "median_ratio_offball": 0.6784156856163731,
+      "median_ratio_onball": 0.7991369493227228,
+      "mannwhitney_p_onesided": 0.04997913450799085,
+      "mannwhitney_p_onesided_drop_borderline": 0.022505183269304195
+    },
+    "resid_ge15": {
+      "n_dims": 33,
+      "n_sig": 10,
+      "n_sig_offball": 5,
+      "share_sig_offball": 0.5,
+      "fisher_or": 1.3,
+      "fisher_p_onesided": 0.5118094178717092,
+      "median_ratio_offball": 0.690180291294242,
+      "median_ratio_onball": 0.8000893156877107,
+      "mannwhitney_p_onesided": 0.04997913450799085,
+      "mannwhitney_p_onesided_drop_borderline": 0.024715027205874596
+    },
+    "no_yoyo_ge15": {
+      "n_dims": 33,
+      "n_sig": 7,
+      "n_sig_offball": 5,
+      "share_sig_offball": 0.7142857142857143,
+      "fisher_or": 4.0,
+      "fisher_p_onesided": 0.13014460511679646,
+      "median_ratio_offball": 0.7388798856759011,
+      "median_ratio_onball": 0.8061506032286938,
+      "mannwhitney_p_onesided": 0.042956148568821156,
+      "mannwhitney_p_onesided_drop_borderline": 0.022505183269304195
+    },
+    "same_league_ge15": {
+      "n_dims": 33,
+      "n_sig": 11,
+      "n_sig_offball": 8,
+      "share_sig_offball": 0.7272727272727273,
+      "fisher_or": 5.714285714285714,
+      "fisher_p_onesided": 0.03137463526301366,
+      "median_ratio_offball": 0.6870660257638933,
+      "median_ratio_onball": 0.7836995416582176,
+      "mannwhitney_p_onesided": 0.14308195355874476,
+      "mannwhitney_p_onesided_drop_borderline": 0.05844975389769949
+    },
+    "ge5_all18": {
+      "n_dims": 33,
+      "n_sig": 7,
+      "n_sig_offball": 3,
+      "share_sig_offball": 0.42857142857142855,
+      "fisher_or": 0.875,
+      "fisher_p_onesided": 0.716781272120538,
+      "median_ratio_offball": 0.8831097485016222,
+      "median_ratio_onball": 0.9347345098390734,
+      "mannwhitney_p_onesided": 0.4639895690025787,
+      "mannwhitney_p_onesided_drop_borderline": 0.58640938352005
+    }
+  }
+}

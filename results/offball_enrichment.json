@@ -1,0 +1,15 @@
+{
+  "taxonomy": "phase-of-play, pre-specified in code/style_taxonomy.py",
+  "source": "portability_rewire_v2_33dim.csv (33 dims, 20000 perms, bad field excluded)",
+  "n_offball_dims": 15,
+  "n_onball_dims": 18,
+  "n_sig": 11,
+  "n_sig_offball": 8,
+  "share_sig_offball": 0.7272727272727273,
+  "fisher_or": 5.714285714285714,
+  "fisher_p_onesided": 0.03137463526301366,
+  "median_ratio_offball": 0.6784156856163731,
+  "median_ratio_onball": 0.7991369493227228,
+  "mannwhitney_p_onesided": 0.04997913450799085,
+  "mannwhitney_p_onesided_drop_borderline": 0.022505183269304195
+}
